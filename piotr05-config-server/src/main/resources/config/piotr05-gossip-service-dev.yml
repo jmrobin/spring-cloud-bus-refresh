@@ -1,0 +1,18 @@
+# piotr05-gossip-service-dev.yml
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+      
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    
+server:
+  port: 8020
+  
+gossip:
+  version: NATIVE version 1.9.x DEV

@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: piotr05-config-server
+  profiles:
+    active:
+    - native
+  cloud:
+    bus:
+      refresh:
+        enabled: true      
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    
+server:
+  port: 8888
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    bus-refresh:
+      enabled: true
